@@ -9,7 +9,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Use Ubuntu for better compatibility with Git commands
-
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -38,7 +41,4 @@ jobs:
           # and `base_url: /repo-name/` in your Vite config.
           # This action handles the `base` path correctly if set in vite.config.js
           # publish_branch: gh-pages # Default is gh-pages, you can specify if different
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
+
