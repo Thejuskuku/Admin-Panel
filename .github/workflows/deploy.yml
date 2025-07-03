@@ -38,3 +38,7 @@ jobs:
           # and `base_url: /repo-name/` in your Vite config.
           # This action handles the `base` path correctly if set in vite.config.js
           # publish_branch: gh-pages # Default is gh-pages, you can specify if different
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
