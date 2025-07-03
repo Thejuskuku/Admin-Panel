@@ -2,7 +2,7 @@
   "name": "admindash",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://thejuskuku.github.io/Admin-Panel",
+  "homepage": "https://thejuskuku.github.io/Admin-Panel/src",
   "type": "module",
   "scripts": {
     "dev": "vite",
